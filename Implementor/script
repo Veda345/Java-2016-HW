@@ -1,0 +1,6 @@
+cp src/*.java jar
+cp info jar
+cp lib jar 
+cd jar
+javac -cp ImplementorTest.jar *.java
+jar cfm Impl.jar Manifest.MF *.class info lib 
